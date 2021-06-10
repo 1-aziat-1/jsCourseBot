@@ -12,7 +12,7 @@ function number() {
     return (alert("Загаданное число меньше"),console.log(b), number());
   }else if(b>a){
     return (alert("Загаданное число больше"), number());
-  }else if(isNaN(b) || b === ''){
+  }else if(isNaN(b) || b.trim() === ''){
     return (alert("Введи число!"), number());
   }else if(b === null){
     return (alert("Игра окончена"));
