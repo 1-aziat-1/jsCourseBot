@@ -16,19 +16,19 @@ function number() {
     
     let b = prompt("Угадай число от 1 до 100");
 
-    if(b === null){
+    if(b == a){
+      return (alert("Поздравляю, вы угодали"));
+    }else if(b === null){
       return (alert("Игра окончена"));
     }else if(isNaN(b) || b.trim() === ''){
       alert("Введи число!");
       return   chislo();
     }else if(b<a){
-      alert("Загаданное число больше")
+      alert("Загаданное число больше");
       return   chislo();
     }else if(b>a){
       alert("Загаданное число меньше");
       return   chislo();
-    }else if(b === a){
-      return (alert("Поздравляю, Вы угадали"));
     }
     
     }
